@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @frutum.name %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @frutum.color %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @frutum.size %>
+</p>
+
+<%= link_to 'Edit', edit_frutum_path(@frutum) %> |
+<%= link_to 'Back', fruta_path %>
