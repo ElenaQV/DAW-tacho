@@ -1,0 +1,14 @@
+<div class="container text-center ">
+<h1>Quiz Results</h1>
+<p id="question"> You answered  correctly  <%= @correct  %>  out of  <%= @total %> questions  </p>
+<p id="score"><h2><%= @score %> %</h2></p>
+<%= form_tag({controller => 'quiz', :action => 'index'}, :method =>  'get') do %>
+<div class="center">
+  <%= submit_tag('Take another quiz', :class => 'submit btn btn-info') %>
+</div>
+    <% end %>
+<% content_for(:title) do %>
+Quiz Results
+    <%  end %>
+
+  </div>

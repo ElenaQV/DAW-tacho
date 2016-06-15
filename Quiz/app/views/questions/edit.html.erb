@@ -1,0 +1,9 @@
+<div class="container text-center ">
+<h1>Editing Questions</h1>
+<%= render 'form' %>
+<%= link_to 'Show', @question, class:"btn btn-info top3" %>
+<%= link_to 'Back', questions_path, class:"btn btn-default top3" %>
+<% content_for(:title) do %>
+    Edit Question
+<% end %>
+  </div>
